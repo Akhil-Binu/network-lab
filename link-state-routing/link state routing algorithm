@@ -1,0 +1,26 @@
+Link-State Routing Algorithm:
+
+(It is the Dijkstra algorithm. This algorithm finds the shortest (least cost paths) from the source u to
+every other node in the network.
+D(v): cost of the least cost path from the source node to the destination node v as of this iteration of the
+algorithm
+p(v): previous node of v along the current least cost path from the source to v
+N': a subset of nodes. v is in N'
+if the least cost path from the source to v is definitely known
+
+Initialization :
+N' = {u}
+
+for all nodes v
+    if v is a neighbor of u
+        then D(v) = c(u,v)
+    else
+        D(v) = ∞
+do {
+    find w, not in N'
+    such that D(w) is a minimum
+    add w to N'
+    update D(v) for each neighbor v of w and not in N'.
+
+    D(v) = min{D(v) , D(w) + c(w,v)}
+} while ( N'!= N)

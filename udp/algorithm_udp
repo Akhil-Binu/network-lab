@@ -1,0 +1,19 @@
+Algorithm- UDP
+
+Client
+
+1. Create a socket
+2. Read the matrices from the standard input and send it to the server using the socket
+3. Read the product matrix from the socket and display it on the standard output
+4. Close the socket
+
+
+Server
+
+
+1. Create a socket
+2. bind IP address and port number to the socket
+3. Read the matrices socket from the client using the socket
+4. Find the product of matrices
+5. Send the product matrix to the client using socket
+6. close the socket

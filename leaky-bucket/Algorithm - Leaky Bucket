@@ -1,0 +1,16 @@
+Algorithm - Leaky Bucket
+
+Step 1: Input the bucket size, outgoing rate, and no of inputs
+Step 2: While n is not equal to 0,
+Step 3: Input the incoming packet size
+Step 4: Print the incoming packet size
+Step 5: If the incoming packet size is less than or equal to the bucket size - store,
+Step 6: Add the incoming packet size to the store
+Step 7: Print the bucket buffer size and the store
+Step 8: Subtract the outgoing rate from the store
+Step 9: If the store is less than 0,
+Step 10: Set the store to 0
+Step 11: Print the after outgoing packets left out of the bucket buffer size and the store
+Step 12: Subtract 1 from n
+Step 13: End while
+Step 14: End program
